@@ -696,32 +696,93 @@
         aria-hidden="true"
       >
         <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
-          <div class="modal-content">
+          <div class="modal-content pl-2 pr-2">
             <div class="modal-header">
               <h5 class="modal-title" id="timingModalCenterTitle">Timing</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body text-dark pl-5 pr-5">
               <strong>프로젝트 소개</strong>
               <p>
-                컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠
+                다른 사람들이 올린 피드를 본다. 피드를 본 사람들이 습관 형성을 위해 데일리 인증을
+                시작한다. 21일간 데일리 인증을 성공해 한 번에 몰아보는 타임랩스를 제작합니다. 이
+                타임랩스를 다른 사람들이 볼 수 있도록 공유합니다.
+              </p>
+              <p>
+                데일리 인증과 SNS를 결합해 위와 같은 <mark>습관 형성의 선순환</mark>을 목표로 하고
+                있습니다.
               </p>
               <hr />
               <strong>주요 기능</strong>
-              <p>
-                컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠컨텐츠
-              </p>
+              <ul>
+                <li>데일리 인증하기</li>
+                <li>타임랩스 제작하기</li>
+                <li>타임랩스 공유하기</li>
+                <li>다른 사람들의 타임랩스(피드) 보기</li>
+              </ul>
               <hr />
               <strong>기여한 내용</strong>
               <ul>
-                <li>Spring Security Framework 기반 인증, 인가 개발 -> JWT, OAuth 2.0</li>
-                <li></li>
+                <li>총 456 커밋 중, 161 커밋 기여 (35.3%)</li>
+                <li>JWT, OAuth 2.0 인증, 인가 시스템 개발 (Spring Security Framework 기반)</li>
+                <li>SNS 피드, 댓글, 좋아요 RESTful API 개발</li>
+                <li>피드 Streaming API 개발 (AWS S3 stream 방식)</li>
+                <li>
+                  피드 조회 API 성능 개선
+                  <ul>
+                    <li>쿼리 N+1회, O(NlogN)에서 쿼리 1회, O(NlogN)으로 개선</li>
+                    <li>Schema에 Tree, Disjoint Set 자료구조 적용</li>
+                  </ul>
+                </li>
+                <li>
+                  MariaDB Schema 정의
+                  <ul>
+                    <li>SNS 피드에 대한 비정규화</li>
+                  </ul>
+                </li>
+                <li>
+                  더미 데이터 삽입 페이지 개발 (React.js 기반)
+                  <ul>
+                    <li>더미 데이터 하나를 삽입하는 과정이 복잡하여, 한 번에 처리하기 위해 개발</li>
+                    <li>1개의 데이터 삽입 시간이 약 30분에서 약 2분으로 단축</li>
+                  </ul>
+                </li>
               </ul>
               <hr />
               <strong>느낀점</strong>
-              <p></p>
+              <p>
+                이번에 새로 릴리즈된 <mark>Java 21</mark> 버전의 가장 큰 특징은
+                <mark>가상 스레드</mark>입니다. 이론상 Java 21 버전을 이용해 개발하는 것만으로도
+                좋은 성능을 낼 수 있었기 때문에 사용하게 되었습니다. 이에 따라
+                <mark>Spring Boot 3.2 RC-1</mark> 버전을 사용하였습니다. 현재 Spring Boot의 Tomcat이
+                가진 <mark>Thread per request</mark> 모델에서 기존 스레드(플랫폼 스레드)를 가상
+                스레드로 변경한 부분은 <mark>Apache JMeter</mark>로 부하 테스트를 진행한 결과
+                <mark>1.5배의 성능 향상</mark>을 확인하였습니다.
+              </p>
+              <p>
+                새로운 버전을 사용하게 되면서 <mark>Spring Security</mark>의 <mark>JWT</mark>,
+                <mark>OAuth 2.0</mark> 인증, 인가 과정을 모두 새롭게 작성해야 했습니다. 이전 버전과
+                구현 방식이 조금 달랐기 때문에 <mark>공식 문서</mark>를 참고하여 원하는 기능을
+                구현하는 부분이 가장 어려웠습니다. 특히, 환경 설정에서 대부분이
+                <mark>Customizer</mark> 함수형 인터페이스로 추상화되어 있어 람다 표현식으로 보다
+                간결하고, 표현력이 뛰어난 코드 스타일로 재정의 할 수 있다는 점이 인상적이었습니다.
+              </p>
+              <p>
+                <mark>선한 영향력을 어떻게 부각시킬 수 있을까?</mark>에 대해 깊게 고민하였습니다.
+                저는 데일리 스크럼 시간 동안 이 문제를 팀원들에게 공유하였고, 같이 토론하며 최적의
+                해를 찾기 위해 고민하는 과정이 재밌었습니다. 특히, Database의 정렬된 데이터라는
+                특징을 활용한 점이 좋았다고 느꼈습니다. 최종적으로 이 API를 쿼리 N+1회, O(NlogN)에서
+                <mark>쿼리 1회, O(NlogN)</mark>으로 개선한 점이 제가 가장 자신있어 하는 알고리즘
+                분야로 성과를 낸 부분이라 더욱 좋았습니다.
+              </p>
+              <p>
+                마지막으로, <mark>TDD</mark>를 진행한 경험이 가장 좋았습니다.
+                <mark>Test Code</mark>를 먼저 생각하니, 메소드의 모듈화가 잘되고 있다는 느낌을
+                받았습니다. 이를 통해 메소드를 유지보수 하는 과정이 수월해졌고, 같이 작업하는 팀원이
+                제가 개발한 메소드를 잘 활용하는 모습이 좋았습니다.
+              </p>
               <hr />
               <strong>기술 스택</strong>
               <p>✅ Frontend</p>
