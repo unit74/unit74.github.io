@@ -706,8 +706,8 @@
             <div class="modal-body text-dark pl-5 pr-5">
               <strong>프로젝트 소개</strong>
               <p>
-                다른 사람들이 올린 피드를 본다. 피드를 본 사람들이 습관 형성을 위해 데일리 인증을
-                시작한다. 21일간 데일리 인증을 성공해 한 번에 몰아보는 타임랩스를 제작합니다. 이
+                다른 사람들이 올린 피드를 봅니다. 피드를 본 사람들이 습관 형성을 위해 데일리 인증을
+                시작합니다. 21일간 데일리 인증을 성공해 한 번에 몰아보는 타임랩스를 제작합니다. 이
                 타임랩스를 다른 사람들이 볼 수 있도록 공유합니다.
               </p>
               <p>
@@ -806,6 +806,10 @@
                 src="https://img.shields.io/badge/vite-646CFF.svg?style=for-the-badge&logo=vite&logoColor=white"
                 alt="Vite"
               />
+              <img
+                src="https://img.shields.io/badge/pwa-5A0FC8.svg?style=for-the-badge&logo=pwa&logoColor=white"
+                alt="PWA"
+              />
               <p></p>
               <p>✅ Backend</p>
               <img
@@ -836,10 +840,14 @@
                 src="https://img.shields.io/badge/ElasticStack-%23005571.svg?style=for-the-badge&logo=ElasticStack&logoColor=white"
                 alt="ElasticStack"
               />
+              <img
+                src="https://img.shields.io/badge/-Swagger-%23Clojure?style=for-the-badge&logo=swagger&logoColor=white"
+                alt="Swagger"
+              />
               <p></p>
               <p>✅ Infrastructure & Database</p>
               <img
-                src="https://img.shields.io/badge/mrariaDB-%23003545.svg?style=for-the-badge&logo=mariadb&logoColor=white"
+                src="https://img.shields.io/badge/mariaDB-%23003545.svg?style=for-the-badge&logo=mariadb&logoColor=white"
                 alt="MariaDB"
               />
               <img
@@ -896,15 +904,188 @@
         aria-labelledby="whatisthisModalCenterTitle"
         aria-hidden="true"
       >
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
+        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+          <div class="modal-content pl-2 pr-2">
             <div class="modal-header">
-              <h5 class="modal-title" id="whatisthisModalCenterTitle">이게MO징 상세보기</h5>
+              <h5 class="modal-title" id="whatisthisModalCenterTitle">이게MO징</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-            <div class="modal-body">작성 중입니다.</div>
+            <div class="modal-body text-dark pl-5 pr-5">
+              <strong>프로젝트 소개</strong>
+              <p>
+                최근 신축 건물 하자에 대한 뉴스가 많아졌습니다. 입주 전, 사전 점검을 실시해 하자에
+                대해 보수 신청을 합니다. 이에 따라 이를 전문적으로 진행하는 업체들이 생겨났습니다.
+              </p>
+              <p>
+                이번 프로젝트는 사람이 하는 일의 일부를 <mark>터틀봇(IoT 장비)</mark>으로 대체하여
+                인건비 절감을 목표로 합니다.
+              </p>
+              <hr />
+              <strong>주요 기능</strong>
+              <ul>
+                <li>
+                  사전 점검 신청자
+                  <ul>
+                    <li>사전 점검 신청하기</li>
+                    <li>사전 점검 결과 확인하기</li>
+                  </ul>
+                </li>
+                <li>
+                  직원
+                  <ul>
+                    <li>터틀봇 조작하기</li>
+                    <li>투두리스트 확인 및 체크하기</li>
+                    <li>투두리스트 및 터틀봇의 정보를 결합해 보고서 만들기</li>
+                  </ul>
+                </li>
+                <li>
+                  터틀봇
+                  <ul>
+                    <li>집을 탐색하며 도안 만들기</li>
+                    <li>흠집 정보 찾기</li>
+                  </ul>
+                </li>
+              </ul>
+              <hr />
+              <strong>기여한 내용</strong>
+              <ul>
+                <li>총 558 커밋 중, 125 커밋 기여 (22.4%)</li>
+                <li>CI/CD 인프라 구축 및 유지보수 (AWS EC2 기반)</li>
+                <li>
+                  결제 시스템 개발 (Toss 가상 계좌 API 기반)
+                  <ul>
+                    <li>실시간 결제 상태 변경 시스템 구현 (Toss Webhook 기반)</li>
+                  </ul>
+                </li>
+                <li>
+                  핸드폰 인증 구현 (Naver SMS API 기반)
+                  <ul>
+                    <li>인증번호 방식 OTP(One-Time-Pad) 시스템 구현 (Redis 기반)</li>
+                  </ul>
+                </li>
+                <li>비회원 요청, 결제 내역, 점검 기록, 점검 목록 RESTful API 개발</li>
+                <li>
+                  직원과 터틀봇(IoT 장비) 통신 작업
+                  <ul>
+                    <li>
+                      한 직원이 여러 터틀봇을 조작할 수 있는 Web Socket 시스템 설계 및 개발 (Unicast
+                      방식)
+                    </li>
+                    <li>터틀봇이 수집한 정보를 Database에 적재</li>
+                    <li>Python Tkinter, React.js 연결 예제 코드 작성으로 개발 기간 1주 단축</li>
+                  </ul>
+                </li>
+                <li>MariaDB Schema 정의</li>
+              </ul>
+              <hr />
+              <strong>느낀점</strong>
+              <p>작성 중....</p>
+              <hr />
+              <strong>기술 스택</strong>
+              <p>✅ Frontend</p>
+              <img
+                src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"
+                alt="HTML"
+              />
+              <img
+                src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white"
+                alt="CSS3"
+              />
+              <img
+                src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"
+                alt="React"
+              />
+              <img
+                src="https://img.shields.io/badge/pwa-5A0FC8.svg?style=for-the-badge&logo=pwa&logoColor=white"
+                alt="PWA"
+              />
+              <p></p>
+              <p>✅ Backend</p>
+              <img
+                src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white"
+                alt="Java"
+              />
+              <img
+                src="https://img.shields.io/badge/springboot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white"
+                alt="SpringBoot"
+              />
+              <img
+                src="https://img.shields.io/badge/springsecurity-6DB33F?style=for-the-badge&logo=springsecurity&logoColor=white"
+                alt="SpringSecurity"
+              />
+              <img
+                src="https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens"
+                alt="JWT"
+              />
+              <img
+                src="https://img.shields.io/badge/-Swagger-%23Clojure?style=for-the-badge&logo=swagger&logoColor=white"
+                alt="Swagger"
+              />
+              <p></p>
+              <p>✅ Embedded</p>
+              <img
+                src="https://img.shields.io/badge/python-%233776AB.svg?style=for-the-badge&logo=python&logoColor=white"
+                alt="Python"
+              />
+              <img
+                src="https://img.shields.io/badge/ros2-22314E.svg?style=for-the-badge&logo=ros&logoColor=white"
+                alt="Ros2"
+              />
+              <p></p>
+              <p>✅ Infrastructure & Database</p>
+              <img
+                src="https://img.shields.io/badge/mariaDB-%23003545.svg?style=for-the-badge&logo=mariadb&logoColor=white"
+                alt="MariaDB"
+              />
+              <img
+                src="https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white"
+                alt="Redis"
+              />
+              <img
+                src="https://img.shields.io/badge/Jenkins-%23DD0031.svg?style=for-the-badge&logo=Jenkins&logoColor=white"
+                alt="Jenkins"
+              />
+              <img
+                src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"
+                alt="Docker"
+              />
+              <img
+                src="https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white"
+                alt="Nginx"
+              />
+              <img
+                src="https://img.shields.io/badge/AmazonEc2-%23FF9900.svg?style=for-the-badge&logo=AmazonEc2&logoColor=white"
+                alt="AmazonEC2"
+              />
+              <img
+                src="https://img.shields.io/badge/AmazonS3-%23569A31.svg?style=for-the-badge&logo=Amazons3&logoColor=white"
+                alt="AmazonS3"
+              />
+              <p></p>
+              <p>✅ Collaboration</p>
+              <img
+                src="https://img.shields.io/badge/gitlab-FC6D26.svg?style=for-the-badge&logo=gitlab&logoColor=white"
+                alt="GitLab"
+              />
+              <img
+                src="https://img.shields.io/badge/jira-%230A0FFF.svg?style=for-the-badge&logo=jira&logoColor=white"
+                alt="Jira"
+              />
+              <img
+                src="https://img.shields.io/badge/mattermost-0058CC.svg?style=for-the-badge&logo=mattermost&logoColor=white"
+                alt="Mattermost"
+              />
+              <img
+                src="https://img.shields.io/badge/Notion-000000.svg?style=for-the-badge&logo=notion&logoColor=white"
+                alt="Notion"
+              />
+              <img
+                src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white"
+                alt="Figma"
+              />
+            </div>
             <div class="modal-footer">
               <a
                 target="_blank"
@@ -927,15 +1108,150 @@
         aria-labelledby="jugyeongYahakCenterTitle"
         aria-hidden="true"
       >
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
+        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+          <div class="modal-content pl-2 pr-2">
             <div class="modal-header">
-              <h5 class="modal-title" id="jugyeongYahakCenterTitle">주경야학 상세보기</h5>
+              <h5 class="modal-title" id="jugyeongYahakCenterTitle">주경야학</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-            <div class="modal-body">작성 중입니다.</div>
+            <div class="modal-body text-dark pl-5 pr-5">
+              <strong>프로젝트 소개</strong>
+              <p>작성 중</p>
+              <hr />
+              <strong>주요 기능</strong>
+              <ul>
+                <li>작성 중</li>
+              </ul>
+              <hr />
+              <strong>기여한 내용</strong>
+              <ul>
+                <li>총 558 커밋 중, 125 커밋 기여 (22.4%)</li>
+                <li>CI/CD 인프라 구축 및 유지보수 (AWS EC2 기반)</li>
+                <li>
+                  결제 시스템 개발 (Toss 가상 계좌 API 기반)
+                  <ul>
+                    <li>실시간 결제 상태 변경 시스템 구현 (Toss Webhook 기반)</li>
+                  </ul>
+                </li>
+                <li>
+                  핸드폰 인증 구현 (Naver SMS API 기반)
+                  <ul>
+                    <li>인증번호 방식 OTP(One-Time-Pad) 시스템 구현 (Redis 기반)</li>
+                  </ul>
+                </li>
+                <li>비회원 요청, 결제 내역, 점검 기록, 점검 목록 RESTful API 개발</li>
+                <li>
+                  직원과 터틀봇(IoT 장비) 통신 작업
+                  <ul>
+                    <li>
+                      한 직원이 여러 터틀봇을 조작할 수 있는 Web Socket 시스템 설계 및 개발 (Unicast
+                      방식)
+                    </li>
+                    <li>터틀봇이 수집한 정보를 Database에 적재</li>
+                    <li>Python Tkinter, React.js 연결 예제 코드 작성으로 개발 기간 1주 단축</li>
+                  </ul>
+                </li>
+                <li>MariaDB Schema 정의</li>
+              </ul>
+              <hr />
+              <strong>느낀점</strong>
+              <p>작성 중....</p>
+              <hr />
+              <strong>기술 스택</strong>
+              <p>✅ Frontend</p>
+              <img
+                src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"
+                alt="HTML"
+              />
+              <img
+                src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white"
+                alt="CSS3"
+              />
+              <img
+                src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"
+                alt="React"
+              />
+              <img
+                src="https://img.shields.io/badge/pwa-5A0FC8.svg?style=for-the-badge&logo=pwa&logoColor=white"
+                alt="PWA"
+              />
+              <p></p>
+              <p>✅ Backend</p>
+              <img
+                src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white"
+                alt="Java"
+              />
+              <img
+                src="https://img.shields.io/badge/springboot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white"
+                alt="SpringBoot"
+              />
+              <img
+                src="https://img.shields.io/badge/springsecurity-6DB33F?style=for-the-badge&logo=springsecurity&logoColor=white"
+                alt="SpringSecurity"
+              />
+              <img
+                src="https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens"
+                alt="JWT"
+              />
+              <img
+                src="https://img.shields.io/badge/-Swagger-%23Clojure?style=for-the-badge&logo=swagger&logoColor=white"
+                alt="Swagger"
+              />
+              <p></p>
+              <p>✅ Infrastructure & Database</p>
+              <img
+                src="https://img.shields.io/badge/mariaDB-%23003545.svg?style=for-the-badge&logo=mariadb&logoColor=white"
+                alt="MariaDB"
+              />
+              <img
+                src="https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white"
+                alt="Redis"
+              />
+              <img
+                src="https://img.shields.io/badge/Jenkins-%23DD0031.svg?style=for-the-badge&logo=Jenkins&logoColor=white"
+                alt="Jenkins"
+              />
+              <img
+                src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"
+                alt="Docker"
+              />
+              <img
+                src="https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white"
+                alt="Nginx"
+              />
+              <img
+                src="https://img.shields.io/badge/AmazonEc2-%23FF9900.svg?style=for-the-badge&logo=AmazonEc2&logoColor=white"
+                alt="AmazonEC2"
+              />
+              <img
+                src="https://img.shields.io/badge/AmazonS3-%23569A31.svg?style=for-the-badge&logo=Amazons3&logoColor=white"
+                alt="AmazonS3"
+              />
+              <p></p>
+              <p>✅ Collaboration</p>
+              <img
+                src="https://img.shields.io/badge/gitlab-FC6D26.svg?style=for-the-badge&logo=gitlab&logoColor=white"
+                alt="GitLab"
+              />
+              <img
+                src="https://img.shields.io/badge/jira-%230A0FFF.svg?style=for-the-badge&logo=jira&logoColor=white"
+                alt="Jira"
+              />
+              <img
+                src="https://img.shields.io/badge/mattermost-0058CC.svg?style=for-the-badge&logo=mattermost&logoColor=white"
+                alt="Mattermost"
+              />
+              <img
+                src="https://img.shields.io/badge/Notion-000000.svg?style=for-the-badge&logo=notion&logoColor=white"
+                alt="Notion"
+              />
+              <img
+                src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white"
+                alt="Figma"
+              />
+            </div>
             <div class="modal-footer">
               <a
                 target="_blank"
