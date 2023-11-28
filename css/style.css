@@ -12435,6 +12435,12 @@ textarea.form-control {
   font-style: italic;
 }
 
+.small-italic-gray-text {
+  font-size: small; /* Adjust the size as needed */
+  font-style: italic;
+  color: #6c757d; /* This is a common gray font color, adjust the hex value to match your design */
+}
+
 #ftco-loader {
   position: fixed;
   width: 96px;
