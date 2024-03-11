@@ -11962,6 +11962,10 @@ textarea.form-control {
   background-position: center center;
 }
 
+.img:hover {
+  cursor: pointer;
+}
+
 .image-popup {
   cursor: -webkit-zoom-in;
   cursor: -moz-zoom-in;
