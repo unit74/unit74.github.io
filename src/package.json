@@ -14,7 +14,7 @@
   "homepage": "./",
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && move build ..\\",
+    "build": "react-scripts build && move build\\* ..\\ && move build\\images ..\\ && move build\\static ..\\",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
