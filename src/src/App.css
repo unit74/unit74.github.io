@@ -1,0 +1,37 @@
+/* App.css */
+@page {
+  size: A4;
+  margin: 5mm;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.App {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.App-header {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 20px;
+  align-items: center;
+}
+
+h1 {
+  font-size: 40px;
+  color: #333;
+}
+
+h2 {
+  font-size: 32px;
+  color: #333;
+}
+
+h3 {
+  font-size: 24px;
+  color: #333;
+}

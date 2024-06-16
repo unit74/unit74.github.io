@@ -1,0 +1,47 @@
+.awards {
+  padding: 20px;
+}
+
+.awards h2 {
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.awards p,
+.awards ul,
+.awards div {
+  margin-bottom: 10px;
+}
+
+.awards-item:not(:last-child) {
+  border-bottom: #eee 1px solid;
+  padding-bottom: 10px;
+}
+
+.awards-item:not(:first-child) {
+  padding-top: 4px;
+}
+
+.awards-item h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.awards-item p {
+  font-size: 14px;
+  margin: 5px 0;
+  color: #666;
+}
+
+.awards-item ul {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+.awards-item ul li {
+  list-style-type: disc;
+  margin: 5px 0;
+  color: #666;
+}

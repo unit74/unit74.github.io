@@ -1,0 +1,12 @@
+/* Chip.css */
+.chip {
+  display: inline-block;
+  padding: 2px 15px;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #e1e1e1;
+  border-radius: 25px;
+  margin: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}

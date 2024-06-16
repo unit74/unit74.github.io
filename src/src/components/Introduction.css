@@ -1,0 +1,73 @@
+.introduction {
+  padding: 20px;
+}
+
+.introduction h2 {
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.introduction p,
+.introduction ul,
+.introduction div {
+  margin-bottom: 10px;
+}
+
+.introduction ul {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+.introduction ul li {
+  list-style-type: disc;
+  margin: 5px 0;
+  color: #666;
+}
+
+.icon-container {
+  margin-top: 20px;
+  display: flex;
+  gap: 25px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 50%;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.icon:active {
+  transform: scale(1.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.introduction-content {
+  display: flex;
+  align-items: center;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.profile-photo {
+  margin-top: 25px;
+  width: 100%;
+  max-width: 200px;
+}
+
+.text-container {
+  flex: 2;
+}

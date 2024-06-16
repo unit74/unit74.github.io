@@ -1,0 +1,36 @@
+.certifications {
+  padding: 20px;
+}
+
+.certifications h2 {
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.certifications p,
+.certifications ul,
+.certifications div {
+  margin-bottom: 10px;
+}
+
+.certifications-item:not(:last-child) {
+  border-bottom: #eee 1px solid;
+  padding-bottom: 10px;
+}
+
+.certifications-item:not(:first-child) {
+  padding-top: 4px;
+}
+
+.certifications-item h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.certifications-item p {
+  font-size: 14px;
+  margin: 5px 0;
+  color: #666;
+}
