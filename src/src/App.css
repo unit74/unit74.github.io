@@ -21,6 +21,10 @@ body {
   align-items: center;
 }
 
+a {
+  color: #007bff;
+}
+
 h1 {
   font-size: 40px;
   color: #333;
