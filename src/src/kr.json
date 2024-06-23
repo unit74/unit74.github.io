@@ -184,7 +184,7 @@
             "비회원 요청, 결제 내역, 점검 기록, 점검 목록 REST API 개발",
             "결제 시스템, 실시간 결제 상태 변경 시스템 개발 (Toss Payments)",
             "SMS OTP 시스템 개발 (Naver Cloud Platform)",
-            "CI/CD 파이프라인 구축 및 유지보수 (AWS)"
+            "CD 파이프라인 구축 및 유지보수 (AWS)"
           ],
           "skills": [
             "Java",
@@ -264,7 +264,7 @@
       "award": "우수상 (2등)",
       "date": "2023.08.18",
       "institution": "삼성전자주식회사",
-      "description": [
+      "descriptions": [
         "프론트엔드 3명, 백엔드 3명으로 구성된 팀에서 더 많은 어르신에게 교육 기회를 제공하기 위한 플랫폼 개발",
         "비대면 실시간 화상 수업 시스템 개발을 전담하여, 원활한 수업 진행을 위한 기능 개발",
         "어르신 맞춤형 기능인 얼굴 인식 로그인, 그림 일기를 통한 기억 학습 등을 통해 우수함을 인정 받음"
@@ -281,7 +281,7 @@
       "award": "우수상 (2등)",
       "date": "2023.05.26",
       "institution": "삼성전자주식회사",
-      "description": [
+      "descriptions": [
         "프론트엔드 1명, 백엔드 1명으로 구성된 팀에서 공공데이터 포털의 API를 활용해 여행지를 소개하는 플랫폼 개발",
         "유튜브와 비슷한 UI를 채택해 사용자 친화적인 기능 제공으로 우수함을 인정 받음"
       ]
@@ -296,7 +296,10 @@
       "contest": "부경대학교 컴퓨터공학부 컴퓨터 S/W경진대회",
       "award": "장려상",
       "date": "2022.05.25",
-      "institution": "부경대학교 컴퓨터공학부"
+      "institution": "부경대학교 컴퓨터공학부",
+      "descriptions": [
+        "카메라만 사용해 SLAM(동시적 위치추정 및 지도작성) IoT 프로젝트의 SW 개발 담당"
+      ]
     },
     {
       "contest": "2022년 부경대학교 정보융합대학 프로그래밍 경진대회",
@@ -337,16 +340,22 @@
   ],
   "certifications": [
     {
+      "name": "SQL 개발자",
+      "grade": "SQLD",
+      "date": "2024.06.21",
+      "issuer": "한국데이터산업진흥원"
+    },
+    {
+      "name": "OPIc",
+      "grade": "IM3",
+      "date": "2024.06.18",
+      "issuer": "ACTFL"
+    },
+    {
       "name": "HSAT(Hyundai Software Aptitude Test)",
       "grade": "Level 3",
       "date": "2023.08.11",
       "issuer": "현대엔지비"
-    },
-    {
-      "name": "OPIc",
-      "grade": "IM1",
-      "date": "2023.07.02",
-      "issuer": "ACTFL"
     },
     {
       "name": "SW 역량테스트",

@@ -12,9 +12,9 @@ const Awards = ({ data }) => {
           <p>
             {award.award} | {award.date} | {award.institution}
           </p>
-          {award.description && (
+          {award.descriptions && (
             <ul>
-              {award.description.map((des, idx) => (
+              {award.descriptions.map((des, idx) => (
                 <li key={idx}>{des}</li>
               ))}
             </ul>
