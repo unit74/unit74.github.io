@@ -34,9 +34,8 @@ const Experience = ({ data }) => {
                 <p>{detail.firstDescription}</p>
                 <h4>{detail.secondTitle}</h4>
                 <ul>
-                  {detail.secondWorks.map((work, i) => (
-                    <li key={i}>{work}</li>
-                  ))}
+                  {detail.secondWorks &&
+                    detail.secondWorks.map((work, i) => <li key={i}>{work}</li>)}
                 </ul>
                 {detail.thirdTitle && <h4>{detail.thirdTitle}</h4>}
                 {detail.thirdWorks && (
@@ -47,9 +46,7 @@ const Experience = ({ data }) => {
                   </ul>
                 )}
                 <div>
-                  {detail.skills.map((skill, i) => (
-                    <Chip key={i} label={skill} />
-                  ))}
+                  {detail.skills && detail.skills.map((skill, i) => <Chip key={i} label={skill} />)}
                 </div>
               </div>
             ))}
