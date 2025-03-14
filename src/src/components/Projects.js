@@ -6,7 +6,7 @@ import "./Projects.css";
 const Projects = ({ data }) => {
   return (
     <div className="projects">
-      <h2>Side Projects.</h2>
+      <h2>Projects.</h2>
       {data.map((project, index) => (
         <div key={index} className="projects-container">
           <div className="projects-item">

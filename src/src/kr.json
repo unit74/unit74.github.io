@@ -1,17 +1,15 @@
 {
   "introduction": {
     "name": "이동규 이력서",
-    "jobTitle": "백엔드 개발자",
+    "jobTitle": "어려운 기술을 쉽게 설명하고,\n끝까지 해결책을 찾는 개발자입니다.",
     "contact": "010-6676-5621",
     "email": "u__nit@naver.com",
     "linkedin": "https://linkedin.com/in/dongkyu-lee-838343310",
     "github": "https://github.com/unit74",
     "website": "https://unit74.github.io",
     "descriptions": [
-      "자료구조와 알고리즘을 통해 성능을 개선한 경험이 많습니다.",
-      "프론트엔드 개발 경험을 발휘해 팀 생산성에 기여한 사례가 많습니다.",
-      "능동적이고 적극적인 커뮤니케이션을 추구합니다.",
-      "팀과 협력하여 목표 달성하는 것을 중요하게 생각합니다."
+      "대학교 시절부터 프로그래밍 학원에서 강의를 하며 자연스럽게 비유를 통해 기술을 설명하는 능력을 키웠고, 지금은 다양한 고객사 담당자와의 소통에서도 복잡한 기술적 이슈를 쉽게 풀어 설명하며 협업하고 있습니다.",
+      "알고리즘 대회에 참가했을 때는 아침 9시부터 자정까지 다양한 방식으로 문제를 해결하기 위해 도전한 경험이 있으며, 이러한 자세로 실제 업무에서도 문제가 생기면 포기하지 않고 끝까지 해결 방안을 찾아갑니다."
     ]
   },
   "skills": ["Java", "Spring Boot", "Spring Data JPA", "MySQL", "Redis", "Git"],
@@ -41,7 +39,7 @@
       "startDate": "2016.03",
       "endDate": "2021.02",
       "gpa": "3.93/4.5",
-      "status": "중퇴",
+      "status": "중퇴(편입)",
       "category": "학사"
     }
   ],
@@ -55,7 +53,20 @@
       "endDate": "In Progress",
       "details": [
         {
-          "title": "신입사원 교육 수행 중"
+          "title": "차세대 결재 프로젝트",
+          "firstTitle": "",
+          "firstDescription": "",
+          "secondTitle": "업무 내용",
+          "secondWorks": [
+            "레거시 코드 분석 및 신규 REST API 개발 (C# ASP.NET -> Java Spring Boot)",
+            "차세대 프로젝트의 구조 개선 및 기능 재설계"
+          ],
+          "thirdTitle": "성과",
+          "thirdWorks": [
+            "기존 시스템의 주요 기능을 95% 이상 구현하여 사용자들이 새로운 시스템에 쉽게 적응할 수 있도록 함",
+            "사용자들의 결재 양식에 대한 피드백을 신속하게 반영할 수 있는 유연한 인터페이스를 설계"
+          ],
+          "skills": ["Java", "Spring Boot", "jOOQ", "MariaDB", "React.js"]
         }
       ]
     },
@@ -69,11 +80,15 @@
       "details": [
         {
           "title": "대규모 트래픽을 견디는 상품 전시 영역 구축 과제 수행",
-          "firstTitle": "업무 설명",
-          "firstDescription": "카카오 선물하기 서비스의 전시 영역과 유사하게 설계된 과제를 수행했습니다. 3인 1조로 개발했고, 모든 일을 팀원들과 공유하며 진행했습니다.",
           "secondTitle": "업무 내용",
-          "secondWorks": ["상품 관리 (Admin 영역) REST API 개발"],
-          "skills": ["Java", "Spring Boot", "Spring Data JPA", "MySQL"]
+          "secondWorks": ["Message Queue를 활용한 시스템 설계", "REST API 개발"],
+          "thirdTitle": "성과",
+          "thirdWorks": [
+            "캐싱 전략 개선",
+            "RabbitMQ 메시지 순서, 중복, 크기 문제 해결",
+            "상품 다건 조회 API 성능 개선"
+          ],
+          "skills": ["Java", "Spring Boot", "Spring Data JPA", "MySQL", "RabbitMQ"]
         },
         {
           "title": "캐싱 전략 개선",
@@ -126,60 +141,6 @@
     }
   ],
   "projects": [
-    {
-      "name": "Timing",
-      "participants": "프론트엔드 2명, 백엔드 2명, 인프라 및 검색엔진 2명",
-      "organization": "삼성 청년 SW 아카데미",
-      "startDate": "2023.10.10",
-      "endDate": "2023.11.17",
-      "github": "https://github.com/unit74/timing",
-      "details": [
-        {
-          "title": "Timing 프로젝트 서버 개발",
-          "firstTitle": "업무 설명",
-          "firstDescription": "다른 사람들이 올린 피드를 보고 동기 부여를 얻고 따라해 습관을 만들 수 있도록 습관 형성의 선순환을 도모하는 SNS 프로젝트의 백엔드 개발자로 참여해 서버 개발을 담당했습니다.",
-          "secondTitle": "업무 내용",
-          "secondWorks": [
-            "SNS 피드, 댓글, 좋아요 REST API 개발",
-            "JWT, Kakao OAuth 2.0 인증, 인가 시스템 개발"
-          ],
-          "skills": [
-            "Java",
-            "Spring Boot",
-            "Spring Security",
-            "Spring Data JPA",
-            "MariaDB",
-            "Redis"
-          ]
-        },
-        {
-          "title": "피드 조회 API 성능 개선",
-          "firstTitle": "문제 설명",
-          "firstDescription": "습관 형성을 따라 시작한 사용자들을 보고 동기 부여를 얻기 위해 '따라 한 모든 피드 한 눈에 보기 기능'을 제공하고자 했습니다. 피드 간 부모-자식 관계를 나타내어야 하며, 관련된 모든 피드를 가져와야 했습니다. 관련된 피드를 모두 조회하려다 보니 부모 피드 조회, 부모 피드의 부모 피드 조회, ...와 같이 H+1회의 쿼리가 발생했습니다.",
-          "secondTitle": "업무 내용",
-          "secondWorks": [
-            "피드 간 부모-자식 관계를 정의하기 위해 Schema에 Tree 자료구조 적용",
-            "관련된 모든 피드를 한 번에 가져오기 위해 Schema에 Disjoint Set 자료구조 적용",
-            "root 피드가 삭제되었을 때와 같이 복잡한 상황을 방지하고자 Soft Delete 방식 채택"
-          ],
-          "thirdTitle": "성과",
-          "thirdWorks": ["쿼리 횟수 개선 (최대 H+1회 → 1회)"],
-          "skills": ["MariaDB"],
-          "link": "https://wirehaired-maxilla-2eb.notion.site/API-a2f9ab30b89741abb5d362422b2ea540?pvs=4"
-        },
-        {
-          "title": "샘플 데이터 삽입 환경 개선",
-          "firstTitle": "문제 설명",
-          "firstDescription": "샘플 데이터 생성 시 실제 API를 호출해서 더미 데이터를 만들어야 프로젝트 의도를 명확하게 전달할 수 있다고 생각했습니다. 21일간의 습관 형성 프로젝트 특성상 Swagger로 샘플 데이터 삽입은 많은 시간이 소요되었습니다.",
-          "secondTitle": "업무 내용",
-          "secondWorks": ["샘플 데이터 삽입을 위한 페이지 및 API 개발"],
-          "thirdTitle": "성과",
-          "thirdWorks": ["샘플 데이터 삽입 시간 감소 (30분 → 2분)"],
-          "skills": ["React.js"],
-          "link": "https://wirehaired-maxilla-2eb.notion.site/e939a5d0c61d4d6381e950e5ed27482b?pvs=4"
-        }
-      ]
-    },
     {
       "name": "이게MO징",
       "participants": "프론트엔드 2명, 백엔드 2명, 임베디드 2명",
@@ -261,7 +222,7 @@
           "secondTitle": "업무 내용",
           "secondWorks": [
             "위치 정보를 상대적으로 정의하기 위해 Schema에 Doubly linked list 자료구조 적용",
-            "데이터 무결성을 위해 주변 노드를 FK로 가지고 있었으나 Delete 시 문제가 발생하여 FOREIGN_KEY_CHECKS 옵션을 잠시 0으로 설정하고 수행"
+            "데이터 무결성을 위해 주변 노드를 FK로 가지고 있었으나 Delete 시 문제가 발생하여 FOREIGN_KEY_CHECKS 옵션을 0으로 설정하여 해결"
           ],
           "thirdTitle": "성과",
           "thirdWorks": ["위치 변경 API 호출 시 쿼리 횟수 감소 (최대 N회 → 최대 5회)"],
@@ -274,11 +235,12 @@
   "awards": [
     {
       "contest": "삼성 청년 SW 아카데미 2학기 공통프로젝트",
+      "github": "https://github.com/unit74/jugyeong-yahak",
       "award": "우수상 (2등)",
       "date": "2023.08.18",
       "institution": "삼성전자주식회사",
       "descriptions": [
-        "프론트엔드 3명, 백엔드 3명으로 구성된 팀에서 더 많은 어르신에게 교육 기회를 제공하기 위한 플랫폼 개발",
+        "프론트엔드 3명, 백엔드 3명으로 구성된 팀에서 더 많은 어르신들께 교육 기회를 제공하기 위한 플랫폼 개발",
         "비대면 실시간 화상 수업 시스템 개발을 전담하여, 원활한 수업 진행을 위한 기능 개발",
         "어르신 맞춤형 기능인 얼굴 인식 로그인, 그림 일기를 통한 기억 학습 등을 통해 우수함을 인정 받음"
       ]
@@ -383,18 +345,6 @@
       "grade": "Level 3",
       "date": "2023.08.11",
       "issuer": "현대엔지비"
-    },
-    {
-      "name": "SW 역량테스트",
-      "grade": "Level B",
-      "date": "2023.03.04",
-      "issuer": "삼성전자주식회사"
-    },
-    {
-      "name": "SW 역량테스트",
-      "grade": "Level B",
-      "date": "2022.11.05",
-      "issuer": "삼성전자주식회사"
     }
   ]
 }

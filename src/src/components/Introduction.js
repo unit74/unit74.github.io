@@ -3,6 +3,7 @@ import React from "react";
 import "./Introduction.css";
 
 const Introduction = ({ data }) => {
+  const jobTitle = data.jobTitle.split("\n");
   return (
     <div className="introduction">
       <div className="App-header">
@@ -24,15 +25,14 @@ const Introduction = ({ data }) => {
           <img src="/images/about.jpg" alt="About" className="profile-photo" />
         </div>
         <div className="text-container">
-          <h2>{data.jobTitle}</h2>
+          {jobTitle.map((v, idx) => {
+            return <h3 key={idx}>{v}</h3>;
+          })}
           <ul>
             {data.descriptions.map((description, index) => (
               <li key={index}>{description}</li>
             ))}
           </ul>
-          <p>
-            {data.email} / {data.contact}
-          </p>
         </div>
       </div>
     </div>

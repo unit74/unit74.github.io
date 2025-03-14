@@ -9,6 +9,11 @@ const Awards = ({ data }) => {
       {data.map((award, index) => (
         <div key={index} className="awards-item">
           <h3>{award.contest}</h3>
+          {award.github && (
+            <a href={award.github} target="_blank" rel="noopener noreferrer">
+              GitHub README
+            </a>
+          )}
           <p>
             {award.award} | {award.date} | {award.institution}
           </p>
