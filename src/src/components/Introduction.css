@@ -49,6 +49,10 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
+.word {
+  border-radius: 0%;
+}
+
 .introduction-content {
   display: flex;
   align-items: center;

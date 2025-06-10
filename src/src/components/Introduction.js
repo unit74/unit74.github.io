@@ -16,7 +16,7 @@ const Introduction = ({ data }) => {
             <img src="/images/linkedin.png" alt="LinkedIn" className="icon" />
           </a>
           <a href={data.website} target="_blank" rel="noopener noreferrer">
-            <img src="/images/language.png" alt="Language" className="icon" />
+            <img src="/images/language.png" alt="Language" className="icon word" />
           </a>
         </div>
       </div>
