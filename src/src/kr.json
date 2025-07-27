@@ -61,11 +61,17 @@
             "레거시 코드 분석 및 신규 REST API 개발 (C# ASP.NET -> Java Spring Boot)",
             "차세대 프로젝트의 구조 개선 및 기능 재설계"
           ],
-          "thirdTitle": "성과",
-          "thirdWorks": [
-            "전략 패턴과 레지스트리 패턴을 도입하여 각 양식에 맞는 특화 기능을 동적으로 불러오도록 설계"
-          ],
           "skills": ["Java", "Spring Boot", "jOOQ", "MariaDB", "React.js"]
+        },
+        {
+          "title": "양식별 특화 기능을 전략 + 레지스트리 패턴으로 동적 주입",
+          "secondWorks": [
+            "새로운 양식 서비스 클래스에 어노테이션만 추가하면 자동 등록",
+            "어노테이션 기반으로 회사 코드 + 양식 코드 조합에 따라 구현체 선택 가능",
+            "서비스 클래스는 선언적이고 직관적인 형태로 구현 가능 → 가독성과 유지보수성 향상"
+          ],
+          "link": "https://wirehaired-maxilla-2eb.notion.site/23d802b53516805abb03f7d44cccbbd8?pvs=74",
+          "skills": ["Java", "Spring Boot"]
         }
       ]
     },
@@ -332,18 +338,6 @@
       "grade": "SQLD",
       "date": "2024.06.21",
       "issuer": "한국데이터산업진흥원"
-    },
-    {
-      "name": "OPIc",
-      "grade": "IM3",
-      "date": "2024.06.18",
-      "issuer": "ACTFL"
-    },
-    {
-      "name": "HSAT(Hyundai Software Aptitude Test)",
-      "grade": "Level 3",
-      "date": "2023.08.11",
-      "issuer": "현대엔지비"
     }
   ]
 }
